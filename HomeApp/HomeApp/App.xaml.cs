@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using HomeApp.Pages;
 
 namespace HomeApp
 {
@@ -8,9 +9,12 @@ namespace HomeApp
 	{
 		public App()
 		{
+			// инициализация интерфейса
 			InitializeComponent();
-
-			MainPage = new MainPage();
+			// Инициализация главного экрана
+			// new LoadingPage();
+			// new MainPage();
+			MainPage = new LoginPage();
 		}
 
 		protected override void OnStart()
