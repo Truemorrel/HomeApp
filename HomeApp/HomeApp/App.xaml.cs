@@ -14,6 +14,9 @@ namespace HomeApp
 			// Инициализация главного экрана
 			// new LoadingPage();
 			// new MainPage();
+			// 
+			// new Register();
+			// new RoomsPage();
 			MainPage = new LoginPage();
 		}
 
