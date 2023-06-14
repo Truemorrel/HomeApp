@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System;	
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -37,21 +37,10 @@ namespace HomeApp.Pages
 				// Деактивируем кнопку
 				loginButton.IsEnabled = false;
 
-				// Добавляем элемент через свойство Children
-				stackLayout.Children.Add(new Label
-				{
-					Text = "Слишком много попыток! Попробуйте позже.",
-					TextColor = Color.Red,
-					VerticalTextAlignment = TextAlignment.Center,
-					HorizontalTextAlignment = TextAlignment.Center,
-					Padding = new Thickness()
-					{
-						Bottom = 30,
-						Left = 10,
-						Right = 10,
-						Top = 30
-					}
-				});
+				// Получаем последний дочерний элемент, используя свойство Children, затем выполняем распаковку
+				var infoMessage = (Label)stackLayout.Children.Last();
+				// Задаем текст элемента
+				infoMessage.Text = "Слишком много попыток! Попробуйте позже";
 			}
 			else
 			{
