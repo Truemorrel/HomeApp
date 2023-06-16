@@ -14,10 +14,11 @@ namespace HomeApp
 			// Инициализация главного экрана
 			// new LoadingPage();
 			// new MainPage();
-			// 
+			// new LoginPage();
 			// new Register();
+			// new DevicesPage();
 			// new RoomsPage();
-			MainPage = new LoginPage();
+			MainPage = new DevicesPage();
 		}
 
 		protected override void OnStart()
