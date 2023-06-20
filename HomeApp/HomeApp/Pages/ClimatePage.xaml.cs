@@ -96,11 +96,11 @@ namespace HomeApp.Pages
 			// Создаем новый элемент
 			var pressureBox = new BoxView { Color = Color.BurlyWood };
 			// Указываем позицию
-			var position = new Rectangle(240, 10, 173, 70);
+			var position = new Rectangle(0.5, 0.5, 0.25, 0.5);
 			// Сохраняем настройки лейаута
 			AbsoluteLayout.SetLayoutBounds(pressureBox, position);
 			// Устанавливаем конфигурацию (все величины абсолютные)
-			AbsoluteLayout.SetLayoutFlags(pressureBox, AbsoluteLayoutFlags.None);
+			AbsoluteLayout.SetLayoutFlags(pressureBox, AbsoluteLayoutFlags.All);
 
 			// Добавляем элемент
 			absLayout.Children.Add(pressureBox);
